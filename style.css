@@ -41,36 +41,36 @@
 }
 
 #box1 {
-  border-right: 3px solid rgb(238, 238, 238);
-  border-bottom: 3px solid rgb(238, 238, 238);
+  border-right: 3px solid rgb(216, 215, 215);
+  border-bottom: 3px solid rgb(216, 215, 215);
 }
 #box2 {
-  border-right: 3px solid rgb(238, 238, 238);
-  border-bottom: 3px solid rgb(238, 238, 238);
+  border-right: 3px solid rgb(216, 215, 215);
+  border-bottom: 3px solid rgb(216, 215, 215);
 }
 #box3 {
-  border-bottom: 3px solid rgb(238, 238, 238);
+  border-bottom: 3px solid rgb(216, 215, 215);
 }
 #box4 {
-  border-right: 3px solid rgb(238, 238, 238);
-  border-bottom: 3px solid rgb(238, 238, 238);
+  border-right: 3px solid rgb(216, 215, 215);
+  border-bottom: 3px solid rgb(216, 215, 215);
 }
 #box5 {
-  border-right: 3px solid rgb(238, 238, 238);
-  border-bottom: 3px solid rgb(238, 238, 238);
+  border-right: 3px solid rgb(216, 215, 215);
+  border-bottom: 3px solid rgb(216, 215, 215);
 }
 #box6 {
-  border-bottom: 3px solid rgb(238, 238, 238);
+  border-bottom: 3px solid rgb(216, 215, 215);
 }
 #box7 {
-  border-right: 3px solid rgb(238, 238, 238);
+  border-right: 3px solid rgb(216, 215, 215);
 }
 #box8 {
-  border-right: 3px solid rgb(238, 238, 238);
+  border-right: 3px solid rgb(216, 215, 215);
 }
 
 .box:hover {
-  background-color: rgb(238, 238, 238);
+  background-color: rgb(216, 215, 215);
   transition: 300ms;
   color: white;
 }
@@ -78,7 +78,7 @@
 /* --- Outros --- */
 
 button {
-  background: #BEC5FF;
+  background: rgb(167, 176, 253);
   color: rgb(255, 255, 255);
   border: none;
   border-radius: 5px;
@@ -89,13 +89,13 @@ button {
   height: 50px;
   display: block;
   margin: 0 auto;
-  margin-top: 80px;
+  margin-top: 50px;
   outline: none;
   transition: 300ms;
 } 
 button:hover {
   transition: 400ms;
-  background: rgb(174, 181, 238);
+  background: rgb(146, 155, 235);
 }
 
 span {
@@ -104,13 +104,13 @@ span {
   text-align: center;
   font-size: 25px;
   font-weight: 600;
-  color: rgb(197, 197, 197);
+  color: rgb(199, 199, 199);
   transition: 400ms;
 }
 
 h2 {
   width: 100%;
-  margin-bottom: 60px;
+  margin-bottom: 20px;
   font-size: 34px;
   font-weight: 800;
   text-align: center;
@@ -119,5 +119,10 @@ h2 {
 
 .win {
   background-color: #BEC5FF;
+  color: white;
+}
+
+.lose {
+  background-color: rgb(199, 199, 199);
   color: white;
 }
