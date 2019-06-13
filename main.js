@@ -2,13 +2,13 @@ window.onload = game();
 
 var turn = document.getElementById("turn");
 var boxes = document.querySelectorAll(".box");
+var play = 0;
 
 // Jogo
 function game() {
 
   // Evento onclick
   var boxes = document.querySelectorAll(".box");
-  var play = 0;
 
   for(var i = 0; i < boxes.length; i++) {
     boxes[i].onclick = function() {
@@ -26,6 +26,7 @@ function game() {
       }
     };
   }
+  
 }
 
 // Checa ao final de cada jogada
@@ -57,6 +58,10 @@ function checkWinner() {
     selectWinnerBoxes(box1, box5, box9);
   } else if(box3.innerHTML !== "" && box3.innerHTML === box5.innerHTML && box3.innerHTML === box7.innerHTML) {
     selectWinnerBoxes(box3, box5, box7);
+  } else {
+    if(boxes.innerHTML !== "" && play == 9) {
+      draw();
+    }
   }
 
 }
@@ -68,13 +73,21 @@ function selectWinnerBoxes(b1, b2, b3) {
   turn.innerHTML = b1.innerHTML + " is the Winner!";
 }
 
+function draw() {
+  turn.innerHTML = "Draw";
+  for(box of boxes) {
+    box.classList.add("lose");
+  }
+}
+
 // Restart
 function replay() {
+  play = 0; 
   for(var i = 0; i < boxes.length; i++) {
-
+    boxes[i].classList.remove("lose");
     boxes[i].classList.remove("win");
     boxes[i].innerHTML = "";
     turn.innerHTML = "Let's play!";
-
+    
   }
 }
