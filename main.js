@@ -4,6 +4,12 @@ var turn = document.getElementById("turn");
 var boxes = document.querySelectorAll(".box");
 var play = 0;
 
+// Começar
+function startGame() {
+  var homePage = document.querySelector(".mainPage");
+  homePage.style.display = "none";
+}
+
 // Jogo
 function game() {
 
